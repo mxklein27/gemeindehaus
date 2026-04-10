@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Das Gemeindehaus der Kirchengemeinde St. Marien Wathlingen</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2c1f12;
+  background: #faf6ee;
+  padding: 48px 32px 64px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 44px;
+}
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.ornament-line {
+  height: 1px;
+  width: 56px;
+  background: linear-gradient(to right, transparent, #9a7a3a);
+}
+.ornament-line.r { background: linear-gradient(to left, transparent, #9a7a3a); }
+.ornament-cross { color: #9a7a3a; font-size: 15px; }
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3b2a1a;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+h1 em { font-size: 0.82em; font-weight: 500; }
+.subtitle {
+  font-size: 14px;
+  color: #8a6a4a;
+  font-style: italic;
+  margin-bottom: 18px;
+}
+.divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #9a7a3a, transparent);
+  margin: 0 auto;
+}
+
+.intro {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #5a3e28;
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto 44px;
+  font-style: italic;
+}
+
+/* Infoboxen */
+.section {
+  margin-bottom: 28px;
+  padding: 18px 20px;
+  border-left: 3px solid #f0e4c8;
+  background: #faf6ee;
+  transition: border-color 0.2s, background 0.2s;
+}
+.section:hover {
+  border-left-color: #9a7a3a;
+  background: #f5edd8;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9a7a3a;
+  margin-bottom: 6px;
+}
+.tag.gruen  { color: #5a7a35; }
+.tag.blau   { color: #2d6a7a; }
+.tag.braun  { color: #7a5432; }
+
+h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #3b2a1a;
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: #5a3e28;
+}
+p + p { margin-top: 8px; }
+
+/* Liste */
+ul.aktivitaeten {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+ul.aktivitaeten li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #5a3e28;
+  padding: 4px 0 4px 20px;
+  position: relative;
+  border-bottom: 1px solid #f0e8d4;
+}
+ul.aktivitaeten li:last-child { border-bottom: none; }
+ul.aktivitaeten li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: #c9a84c;
+  font-size: 9px;
+  top: 8px;
+}
+
+/* Fakten-Kästchen */
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.fact {
+  flex: 1;
+  min-width: 160px;
+  background: #f0e8d4;
+  border-radius: 4px;
+  padding: 14px 16px;
+  text-align: center;
+}
+.fact-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #3b2a1a;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.fact-label {
+  font-size: 12px;
+  color: #8a6a4a;
+  font-style: italic;
+}
+
+.citation {
+  margin-top: 44px;
+  padding-top: 20px;
+  border-top: 1px solid #f0e8d4;
+  text-align: center;
+}
+.citation p {
+  font-size: 12px;
+  color: #8a6a4a;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+@media (max-width: 500px) {
+  body { padding: 32px 16px 48px; }
+  h1 { font-size: 22px; }
+  .facts { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="ornament">
+    <div class="ornament-line"></div>
+    <span class="ornament-cross">✦</span>
+    <div class="ornament-line r"></div>
+  </div>
+  <h1>Das Gemeindehaus<br><em>St. Marien zu Wathlingen</em></h1>
+  <p class="subtitle">Vom historischen Küsterhaus zum modernen Treffpunkt der Gemeinde</p>
+  <div class="divider"></div>
+</div>
+
+<p class="intro">Ein altes Gebäude, viele Geschichten — und heute ein Ort, an dem Gemeinschaft entsteht. Das Gemeindehaus der Kirchengemeinde St. Marien liegt direkt neben der Kirche und bildet mit ihr und dem Kirchhof einen gemeinsamen Gemeinderaum.</p>
+
+<div class="facts">
+  <div class="fact">
+    <div class="fact-value">~50</div>
+    <div class="fact-label">Plätze für Veranstaltungen</div>
+  </div>
+  <div class="fact">
+    <div class="fact-value">100%</div>
+    <div class="fact-label">Barrierefrei zugänglich</div>
+  </div>
+  <div class="fact">
+    <div class="fact-value">Kirchstraße</div>
+    <div class="fact-label">Lage in Wathlingen</div>
+  </div>
+  <div class="fact">
+    <div class="fact-value">Denkmal</div>
+    <div class="fact-label">Geschützt als Kulturdenkmal</div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="tag braun">Historische Herkunft</span>
+  <h2>Das alte Küsterhaus</h2>
+  <p>Das heutige Gemeindehaus war ursprünglich das historische Küsterhaus der Kirche — ein Gebäude mit langer Geschichte. Es diente über Jahrhunderte als Schul- und Küsterhaus und wurde mehrfach umgebaut, unter anderem nachdem es beim großen Dorfbrand im 17. Jahrhundert zerstört worden war.</p>
+  <p>Als Teil des historischen Kirchenensembles steht das Gebäude heute unter Denkmalschutz und gehört damit zu den ältesten erhaltenen Bauwerken Wathlingens.</p>
+</div>
+
+<div class="section">
+  <span class="tag gruen">Sanierung &amp; Umbau</span>
+  <h2>Vom Küsterhaus zum Gemeindehaus</h2>
+  <p>Im Rahmen eines LEADER- und ZILE-Projekts zur nachhaltigen Entwicklung historischer Gebäude wurde das Küsterhaus behutsam modernisiert und umgestaltet. Ziel war es, das denkmalgeschützte Gebäude zu erhalten und gleichzeitig zeitgemäß nutzbar zu machen.</p>
+  <p>Das Ergebnis: barrierefreier Zugang, moderne Technik und Räumlichkeiten für bis zu rund 50 Personen — ohne dass der historische Charakter des Hauses verloren gegangen ist.</p>
+</div>
+
+<div class="section">
+  <span class="tag blau">Heute</span>
+  <h2>Treffpunkt für die ganze Gemeinde</h2>
+  <p>Das Gemeindehaus ist heute das Herzstück des Gemeindelebens — ein Ort, an dem Menschen zusammenkommen, Ideen entstehen und Gemeinschaft gelebt wird. Zu den regelmäßigen Aktivitäten gehören:</p>
+  <ul class="aktivitaeten">
+    <li>Gemeinde- und Gesprächskreise verschiedener Gruppen</li>
+    <li>Kinder- und Jugendveranstaltungen</li>
+    <li>Kinderbibelwochen — oft gemeinsam auf dem Gelände rund um Kirche und Gemeindehaus</li>
+    <li>Gemeindefeste und besondere Anlässe im Kirchenjahr</li>
+    <li>Treffen und Veranstaltungen der Kirchengemeinde St. Marien</li>
+  </ul>
+</div>
+
+<div class="section">
+  <span class="tag">Lage</span>
+  <h2>Direkt neben der Kirche</h2>
+  <p>Das Gemeindehaus liegt in der Kirchstraße in Wathlingen, unmittelbar neben der St. Marien Kirche. Gemeinsam mit der Kirche und dem historischen Kirchhof bildet es einen zusammenhängenden Ort der Begegnung — mitten im Dorf, offen für alle.</p>
+</div>
+
+<div class="citation">
+  <p>Ev.-luth. Kirchengemeinde St. Marien Wathlingen · Kirchstraße 1 · 29339 Wathlingen<br>
+  Tel.: 05144–8207 · kg.wathlingen@evlka.de</p>
+</div>
+
+</body>
+</html>
